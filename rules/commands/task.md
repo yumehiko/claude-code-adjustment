@@ -24,6 +24,7 @@ Generate `tasks.md` in the same directory as design.md, using the user's languag
   - [Implementation details]
   - Run lint, tests, and build
   - Request UAT if needed
+  - Verify requirements are fulfilled
   - _Requirements: [Requirement numbers addressed]_
 ```
 
@@ -47,21 +48,14 @@ Generate `tasks.md` in the same directory as design.md, using the user's languag
 - Tasks numbered sequentially (1, 2, 3...)
 - Subtasks use decimals (1.1, 1.2...)
 - Checkbox format for tracking progress
-- Mark completed with `[x]` only after:
-  - All tests pass (for TDD tasks)
-  - Lint and build succeed
-  - UAT approved by human (if required)
+- Each task includes requirement references
 
 ### 4. Get User Approval
 After creating tasks.md:
 1. Show the created tasks.md to the user
 2. Ask for their approval or feedback
 3. Make any requested modifications
-
-## After User Approval
-1. Inform the user that the approved tasks.md has been finalized
-2. Explain that the implementation plan is complete with full requirement traceability
-3. Note that each task can be executed independently
+4. Inform user that approved tasks can be executed with `/do` command
 
 ## Validation
 - Ensure design.md and requirements.md exist
