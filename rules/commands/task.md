@@ -59,12 +59,9 @@ After creating tasks.md:
 3. Make any requested modifications
 
 ## After User Approval
-1. If the document was written in a non-English language:
-   - Copy the approved document to `human-docs/[feature-name]/tasks.md` to preserve the user's language version
-   - Then translate the document in `specs/[feature-name]/tasks.md` to English
-2. Inform the user that the approved tasks.md has been finalized
-3. Explain that the implementation plan is complete with full requirement traceability
-4. Note that each task can be executed independently
+1. Inform the user that the approved tasks.md has been finalized
+2. Explain that the implementation plan is complete with full requirement traceability
+3. Note that each task can be executed independently
 
 ## Validation
 - Ensure design.md and requirements.md exist

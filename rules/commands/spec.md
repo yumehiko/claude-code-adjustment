@@ -35,15 +35,11 @@ After creating requirements.md:
 1. Show the created requirements.md to the user
 2. Ask for their approval or feedback
 3. Make any requested modifications
-4. Once approved, translate the document to English if it was written in another language
 
 ## After User Approval
-1. If the document was written in a non-English language:
-   - Copy the approved document to `human-docs/[feature-name]/requirements.md` to preserve the user's language version
-   - Then translate the document in `specs/[feature-name]/requirements.md` to English
-2. Inform the user that the approved requirements.md has been finalized
-3. Suggest running `/design specs/[actual-path]/requirements.md` to proceed to design phase
-4. Replace [actual-path] with the actual directory name you used
+1. Inform the user that the approved requirements.md has been finalized
+2. Suggest running `/design specs/[actual-path]/requirements.md` to proceed to design phase
+3. Replace [actual-path] with the actual directory name you used
 
 ## When specs/[name] Directory Already Exists
 Ask the user whether to:

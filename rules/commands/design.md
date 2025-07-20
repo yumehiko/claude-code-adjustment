@@ -41,12 +41,9 @@ After creating design.md:
 3. Make any requested modifications
 
 ## After User Approval
-1. If the document was written in a non-English language:
-   - Copy the approved document to `human-docs/[feature-name]/design.md` to preserve the user's language version
-   - Then translate the document in `specs/[feature-name]/design.md` to English
-2. Inform the user that the approved design.md has been finalized
-3. Suggest running `/task specs/[actual-path]/design.md` to proceed to task creation
-4. Replace [actual-path] with the actual directory name used
+1. Inform the user that the approved design.md has been finalized
+2. Suggest running `/task specs/[actual-path]/design.md` to proceed to task creation
+3. Replace [actual-path] with the actual directory name used
 
 ## Validation
 - Ensure requirements.md exists before proceeding
