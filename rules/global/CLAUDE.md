@@ -1,5 +1,5 @@
 # General Rule
-- When responding to humans, always use the user's language
+- When responding to humans, always use [the user's language]
 - When manual testing is required (e.g., starting a dev server, opening a browser, etc.), request the human to perform the test instead of executing commands that run indefinitely
 
 # Quality Check Rule

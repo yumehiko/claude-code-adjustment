@@ -42,6 +42,18 @@
 /task specs/your-feature-name/design.md
 ```
 
+---
+
+### `/do` - タスク実行コマンド
+
+**目的**: task.mdにあるタスクのうち、未着手のものを1つ選び実行します。
+
+```
+/do specs/your-feature-name/task.md
+```
+
+---
+
 ## ドキュメント駆動開発のワークフロー
 
 これらのコマンドは、以下のワークフローで使用されることを想定しています：
@@ -49,4 +61,4 @@
 1. **要件定義**: `/spec` コマンドで要件を明確化（→ requirements.md）
 2. **技術設計**: `/design` コマンドで設計書を作成（requirements.md → design.md）
 3. **タスク計画**: `/task` コマンドでタスクリストを作成（design.md → tasks.md）
-4. **実装**: tasks.mdのタスクを順次実行
+4. **実装**:  `/do` コマンドでタスクを1つずつ実行
