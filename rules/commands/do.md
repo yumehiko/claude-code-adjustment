@@ -18,7 +18,8 @@ You are tasked with executing implementation tasks from the tasks.md document. T
 - Execute only this single task
 
 ### 2. Execute The Task
-Follow the implementation approach specified in the task description.
+- First, read the design.md file from the same directory to understand the technical context and design decisions
+- Follow the implementation approach specified in the task description
 
 ### 3. Test Execution Guidelines
 When running tests as part of task execution:
