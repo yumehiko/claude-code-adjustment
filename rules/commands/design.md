@@ -1,6 +1,8 @@
 # /design - Technical Design Documentation
 
-Requirements document path: $ARGUMENTS
+Usage: /design <feature-name>/requirements.md
+- The path should be relative to the specs/ directory
+- Example: `/design user-auth/requirements.md` (refers to specs/user-auth/requirements.md)
 
 You are tasked with creating technical design documentation based on the requirements document at the path specified above. This is the second phase of the documentation process (Requirements → Design → Tasks).
 
@@ -24,7 +26,10 @@ Generate `design.md` in the same directory as requirements.md, using the user's 
 4. **Data Models**: Type definitions and relationships
 5. **Processing Pipeline**: Major workflows and algorithms
 6. **Error Handling**: Error categories and strategies
-7. **Testing Strategy**: Unit, integration, performance, UAT
+7. **Testing Strategy**: 
+   - Unit tests for business logic and utilities (TDD approach)
+   - Manual UI/UX testing for visual components
+   - Focus on practical, implementable tests only
 8. **Performance Considerations**: Optimization and scalability
 
 ### 3. Design Guidelines
@@ -42,8 +47,8 @@ After creating design.md:
 
 ## After User Approval
 1. Inform the user that the approved design.md has been finalized
-2. Suggest running `/task specs/[actual-path]/design.md` to proceed to task creation
-3. Replace [actual-path] with the actual directory name used
+2. Suggest running `/task [feature-name]/design.md` to proceed to task creation
+3. Replace [feature-name] with the actual feature directory name used
 
 ## Validation
 - Ensure requirements.md exists before proceeding

@@ -29,7 +29,7 @@
 **目的**: requirements.mdを基に技術設計書（design.md）を作成します。
 
 ```
-/design specs/your-feature-name/requirements.md
+/design your-feature-name
 ```
 
 ---
@@ -39,7 +39,7 @@
 **目的**: design.mdを基に実装タスクリスト（tasks.md）を作成します。
 
 ```
-/task specs/your-feature-name/design.md
+/task your-feature-name
 ```
 
 ---
@@ -49,7 +49,7 @@
 **目的**: task.mdにあるタスクのうち、未着手のものを1つ選び実行します。
 
 ```
-/do specs/your-feature-name/task.md
+/do your-feature-name
 ```
 
 ---
