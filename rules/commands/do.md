@@ -1,9 +1,6 @@
 # /do - Execute Implementation Tasks
 
-Usage: /do <feature-name>/tasks.md [task_number]
-- The path should be relative to the specs/ directory
-- Example: `/do user-auth/tasks.md` (refers to specs/user-auth/tasks.md)
-- task_number (optional): Specific task number to execute
+Task document path: specs/$ARGUMENTS/tasks.md
 
 You are tasked with executing implementation tasks from the tasks.md document. This command executes the approved implementation plan created by /task command.
 
@@ -22,30 +19,25 @@ You are tasked with executing implementation tasks from the tasks.md document. T
 - First, read the design.md file from the same directory to understand the technical context and design decisions
 - Follow the implementation approach specified in the task description
 
-### 3. Test Strategy
-Apply the appropriate testing approach based on the implementation type:
-
-#### 3.1 Logic/Business Layer Testing (TDD Approach)
-For pure logic, utilities, and business rules:
-- Write unit tests FIRST before implementation (TDD)
-- Focus on testing input/output and edge cases
-- Use mocking for external dependencies
-- Run tests automatically after implementation
+### 3. Test Execution Guidelines
+When running tests as part of task execution:
+- **AVOID watch mode**: Always use one-time test execution commands
+- Use flags like `--no-watch`, `--watchAll=false`, or `--run` to prevent watch mode
 - Common patterns:
   - Jest: `npm test -- --watchAll=false` or `npm test -- --no-watch`
   - Vitest: `npm test -- --run`
   - Other tools: Check for similar non-watch flags
+- If the test command doesn't support non-watch mode, run tests manually and inform the user
+- Set reasonable timeouts (e.g., 30-60 seconds) for test execution
 
-#### 3.2 UI Component/View Testing (Manual Approval)
-For UI components, views, and visual elements:
-- Skip automated visual/component tests
-- Request manual testing by the user instead
-- Provide clear instructions:
+### 3.1 Manual Testing Requirements
+When manual testing is required (e.g., starting dev server, browser testing, GUI interaction):
+- Request the user to perform the manual test
+- Provide:
   - The exact command to run (e.g., `npm run dev`)
-  - What specific UI/functionality to test
-  - Expected visual behavior or interaction
-- Wait for user's confirmation before marking task complete
-
+  - What specific functionality to test
+  - Expected behavior or outcome
+- Wait for user's confirmation before proceeding
 
 ### 4. Task Completion Criteria
 Mark task as completed `[x]` only after:

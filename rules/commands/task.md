@@ -1,8 +1,6 @@
 # /task - Implementation Task List
 
-Usage: /task <feature-name>/design.md
-- The path should be relative to the specs/ directory
-- Example: `/task user-auth/design.md` (refers to specs/user-auth/design.md)
+Design document path: specs/$ARGUMENTS/design.md
 
 You are tasked with creating actionable implementation tasks based on the design document at the path specified above. This is the final phase of the documentation process (Requirements → Design → Tasks).
 
