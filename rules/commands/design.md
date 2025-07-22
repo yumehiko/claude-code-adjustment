@@ -1,6 +1,6 @@
 # /design - Technical Design Documentation
 
-Requirements document path: specs/$ARGUMENTS/requirements.md
+Document directory: specs/$ARGUMENTS
 
 You are tasked with creating technical design documentation based on the requirements document at the path specified above. This is the second phase of the documentation process (Requirements → Design → Tasks).
 

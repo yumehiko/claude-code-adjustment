@@ -1,6 +1,6 @@
 # /task - Implementation Task List
 
-Design document path: specs/$ARGUMENTS/design.md
+Document directory: specs/$ARGUMENTS
 
 You are tasked with creating actionable implementation tasks based on the design document at the path specified above. This is the final phase of the documentation process (Requirements → Design → Tasks).
 

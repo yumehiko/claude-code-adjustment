@@ -1,6 +1,6 @@
 # /do - Execute Implementation Tasks
 
-Task document path: specs/$ARGUMENTS/tasks.md
+Document directory: specs/$ARGUMENTS
 
 You are tasked with executing implementation tasks from the tasks.md document. This command executes the approved implementation plan created by /task command.
 
