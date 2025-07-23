@@ -42,7 +42,7 @@ After creating design.md:
 
 ## After User Approval
 1. Inform the user that the approved design.md has been finalized
-2. Suggest running `/task specs/[actual-path]/design.md` to proceed to task creation
+2. Suggest running `/task [actual-path]` to proceed to task creation
 3. Replace [actual-path] with the actual directory name used
 
 ## Validation

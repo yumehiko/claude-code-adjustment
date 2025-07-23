@@ -38,7 +38,7 @@ After creating requirements.md:
 
 ## After User Approval
 1. Inform the user that the approved requirements.md has been finalized
-2. Suggest running `/design specs/[actual-path]/requirements.md` to proceed to design phase
+2. Suggest running `/design [actual-path]` to proceed to design phase
 3. Replace [actual-path] with the actual directory name you used
 
 ## When specs/[name] Directory Already Exists
