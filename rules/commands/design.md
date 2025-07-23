@@ -24,7 +24,10 @@ Generate `design.md` in the same directory as requirements.md, using the user's 
 4. **Data Models**: Type definitions and relationships
 5. **Processing Pipeline**: Major workflows and algorithms
 6. **Error Handling**: Error categories and strategies
-7. **Testing Strategy**: Unit, integration, performance, UAT
+7. **Testing Strategy**: 
+   - Logic/Business logic: Test-Driven Development (TDD) - Write tests first, then implement to pass tests
+   - UI Components: Manual verification and human approval for behavior testing
+   - Complex integration tests: Not performed
 8. **Performance Considerations**: Optimization and scalability
 
 ### 3. Design Guidelines
@@ -42,8 +45,8 @@ After creating design.md:
 
 ## After User Approval
 1. Inform the user that the approved design.md has been finalized
-2. Suggest running `/task [actual-path]` to proceed to task creation
-3. Replace [actual-path] with the actual directory name used
+2. Suggest running `/task [feature-name]` to proceed to task creation
+3. Replace [feature-name] with the actual directory name used
 
 ## Validation
 - Ensure requirements.md exists before proceeding
