@@ -30,13 +30,10 @@ Generate `tasks.md` in the same directory as design.md, using the user's languag
 
 #### TDD Task Format (for Logic Classes)
 ```markdown
-- [ ] [Task Number]. [Test Creation for Component Name]
-  - Create test file for [Component]
+- [ ] [Task Number]. [Component Name - TDD Implementation]
+  - Create test file in same directory as implementation
   - Define test cases covering all scenarios
   - Run tests to confirm RED state
-  - _Requirements: [Requirement numbers]_
-
-- [ ] [Task Number]. [Implementation of Component Name]
   - Implement [Component] to pass tests
   - Run tests to achieve GREEN state
   - Refactor while maintaining GREEN
@@ -52,12 +49,10 @@ Generate `tasks.md` in the same directory as design.md, using the user's languag
 - Testing and optimization last
 
 ### 3. Task Guidelines
-- **Logic Layer Tasks**: Use TDD approach with proper task ordering:
-  1. Create test file and define test cases first
-  2. Run tests to confirm RED (failure) state
-  3. Implement the logic class/function
-  4. Run tests to achieve GREEN (success) state
-  5. Refactor if needed while maintaining GREEN
+- **Test Location**: Always save tests in the same directory as the implementation (colocated)
+- **Logic Layer Tasks**: Use TDD approach with single task unit from RED to GREEN:
+  - One task includes: test creation → RED state → implementation → GREEN state
+  - This ensures atomic execution for coding agents
 - **UI/Integration Tasks**: One complete unit including manual testing request
 - Each task is one atomic unit for coding agent execution
 - Start with action verbs (Create, Implement, Build)
