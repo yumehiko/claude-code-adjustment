@@ -17,6 +17,7 @@ Based on the user's request above, ask targeted questions to understand:
 - Success criteria and metrics
 
 ### 2. Create Requirements Document (in User's Language)
+Choose a single-word feature name that represents the user's request (e.g., "core" for initial project features).
 Generate `specs/[feature-name]/requirements.md` in the user's language with:
 - **Introduction**: Overview, context, and key functionality
 - **Requirements**: User stories with acceptance criteria

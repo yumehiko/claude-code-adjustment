@@ -16,7 +16,11 @@ You are tasked with executing implementation tasks from the tasks.md document. T
 - Execute only this single task
 
 ### 2. Execute The Task
-- First, read the design.md file from the same directory to understand the technical context and design decisions
+- First, explore the existing directory structure and files to understand the current project state:
+  - List directories and files in the project root and relevant subdirectories
+  - Check for existing implementations, tests, or related files that might affect the task
+  - Identify any existing patterns or conventions in the codebase
+- Read the design.md file from the same directory to understand the technical context and design decisions
 - Follow the implementation approach specified in the task description
 
 ### 3. Test Execution Guidelines

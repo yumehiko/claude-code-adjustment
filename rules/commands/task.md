@@ -28,7 +28,7 @@ Generate `tasks.md` in the same directory as design.md, using the user's languag
   - _Requirements: [Requirement numbers addressed]_
 ```
 
-#### TDD Task Format (for Logic Classes)
+#### TDD Task Format
 ```markdown
 - [ ] [Task Number]. [Component Name - TDD Implementation]
   - Create test file in same directory as implementation
@@ -44,12 +44,35 @@ Generate `tasks.md` in the same directory as design.md, using the user's languag
 #### Organization
 - Infrastructure and setup tasks first
 - Core functionality implementation
-- UI components
+- UI components (including demo page setup for visual verification)
 - Integration work
 - Testing and optimization last
 
+#### UI Component Task Format
+```markdown
+- [ ] [Task Number]. [UI Component Name - Pure UI Implementation]
+  - Create pure UI component without business logic
+  - Define necessary custom hooks for UI state management
+  - Implement component with all visual states
+  - Add to demo page for visual verification
+  - Request manual visual check
+  - Run lint and type checks
+  - _Requirements: [Requirement numbers]_
+```
+
+#### Demo Page Setup (First UI Task)
+```markdown
+- [ ] [Task Number]. Create UI Component Demo Page
+  - Create demo page for displaying all UI components
+  - Set up component showcase structure
+  - Include all component states and variations
+  - This page will be used for all visual verification
+  - _Requirements: UI/UX requirements_
+```
+
 ### 3. Task Guidelines
 - **Test Location**: Always save tests in the same directory as the implementation (colocated)
+- **Directory Specification**: For new class/component creation tasks, include the directory path from design.md
 - **Logic Layer Tasks**: Use TDD approach with single task unit from RED to GREEN:
   - One task includes: test creation → RED state → implementation → GREEN state
   - This ensures atomic execution for coding agents
